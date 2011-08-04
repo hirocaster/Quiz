@@ -23,6 +23,14 @@
 		5FA8E59513EADD2D00B05884 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5FA8E59313EADD2D00B05884 /* InfoPlist.strings */; };
 		5FA8E59713EADD2D00B05884 /* QuizTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 5FA8E59613EADD2D00B05884 /* QuizTests.h */; };
 		5FA8E59913EADD2D00B05884 /* QuizTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA8E59813EADD2D00B05884 /* QuizTests.m */; };
+		5FA8E5A313EADED500B05884 /* quiz.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5FA8E5A213EADED500B05884 /* quiz.txt */; };
+		5FA8E5A613EADF9100B05884 /* Quiz.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA8E5A513EADF9100B05884 /* Quiz.m */; };
+		5FA8E5A913EAE15200B05884 /* QuizItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA8E5A813EAE15200B05884 /* QuizItem.m */; };
+		5FA8E5AD13EAEEDC00B05884 /* QuizRunningViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA8E5AB13EAEEDC00B05884 /* QuizRunningViewController.m */; };
+		5FA8E5AE13EAEEDC00B05884 /* QuizRunningViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FA8E5AC13EAEEDC00B05884 /* QuizRunningViewController.xib */; };
+		5FA8E5B113EAF7CD00B05884 /* NotRight.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 5FA8E5AF13EAF7CD00B05884 /* NotRight.aiff */; };
+		5FA8E5B213EAF7CD00B05884 /* Right.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 5FA8E5B013EAF7CD00B05884 /* Right.aiff */; };
+		5FA8E5B413EAF80000B05884 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FA8E5B313EAF80000B05884 /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,22 +48,33 @@
 		5FA8E56813EADD2D00B05884 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5FA8E56A13EADD2D00B05884 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5FA8E56C13EADD2D00B05884 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		5FA8E57013EADD2D00B05884 /* Quiz-Info.plist */ = {isa = PBXFileReference; path = "Quiz-Info.plist"; sourceTree = "<group>"; };
+		5FA8E57013EADD2D00B05884 /* Quiz-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Quiz-Info.plist"; sourceTree = "<group>"; };
 		5FA8E57213EADD2D00B05884 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5FA8E57413EADD2D00B05884 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		5FA8E57613EADD2D00B05884 /* Quiz-Prefix.pch */ = {isa = PBXFileReference; path = "Quiz-Prefix.pch"; sourceTree = "<group>"; };
-		5FA8E57713EADD2D00B05884 /* QuizAppDelegate.h */ = {isa = PBXFileReference; path = QuizAppDelegate.h; sourceTree = "<group>"; };
+		5FA8E57613EADD2D00B05884 /* Quiz-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Quiz-Prefix.pch"; sourceTree = "<group>"; };
+		5FA8E57713EADD2D00B05884 /* QuizAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuizAppDelegate.h; sourceTree = "<group>"; };
 		5FA8E57813EADD2D00B05884 /* QuizAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuizAppDelegate.m; sourceTree = "<group>"; };
 		5FA8E57B13EADD2D00B05884 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		5FA8E57D13EADD2D00B05884 /* QuizViewController.h */ = {isa = PBXFileReference; path = QuizViewController.h; sourceTree = "<group>"; };
+		5FA8E57D13EADD2D00B05884 /* QuizViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuizViewController.h; sourceTree = "<group>"; };
 		5FA8E57E13EADD2D00B05884 /* QuizViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuizViewController.m; sourceTree = "<group>"; };
 		5FA8E58113EADD2D00B05884 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/QuizViewController.xib; sourceTree = "<group>"; };
 		5FA8E58813EADD2D00B05884 /* QuizTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuizTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FA8E58913EADD2D00B05884 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		5FA8E59213EADD2D00B05884 /* QuizTests-Info.plist */ = {isa = PBXFileReference; path = "QuizTests-Info.plist"; sourceTree = "<group>"; };
+		5FA8E59213EADD2D00B05884 /* QuizTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QuizTests-Info.plist"; sourceTree = "<group>"; };
 		5FA8E59413EADD2D00B05884 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5FA8E59613EADD2D00B05884 /* QuizTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuizTests.h; sourceTree = "<group>"; };
 		5FA8E59813EADD2D00B05884 /* QuizTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuizTests.m; sourceTree = "<group>"; };
+		5FA8E5A213EADED500B05884 /* quiz.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = quiz.txt; sourceTree = "<group>"; };
+		5FA8E5A413EADF9100B05884 /* Quiz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Quiz.h; sourceTree = "<group>"; };
+		5FA8E5A513EADF9100B05884 /* Quiz.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Quiz.m; sourceTree = "<group>"; };
+		5FA8E5A713EAE15200B05884 /* QuizItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuizItem.h; sourceTree = "<group>"; };
+		5FA8E5A813EAE15200B05884 /* QuizItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuizItem.m; sourceTree = "<group>"; };
+		5FA8E5AA13EAEEDC00B05884 /* QuizRunningViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuizRunningViewController.h; sourceTree = "<group>"; };
+		5FA8E5AB13EAEEDC00B05884 /* QuizRunningViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuizRunningViewController.m; sourceTree = "<group>"; };
+		5FA8E5AC13EAEEDC00B05884 /* QuizRunningViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuizRunningViewController.xib; sourceTree = "<group>"; };
+		5FA8E5AF13EAF7CD00B05884 /* NotRight.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = NotRight.aiff; sourceTree = "<group>"; };
+		5FA8E5B013EAF7CD00B05884 /* Right.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = Right.aiff; sourceTree = "<group>"; };
+		5FA8E5B313EAF80000B05884 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FA8E5B413EAF80000B05884 /* AudioToolbox.framework in Frameworks */,
 				5FA8E56913EADD2D00B05884 /* UIKit.framework in Frameworks */,
 				5FA8E56B13EADD2D00B05884 /* Foundation.framework in Frameworks */,
 				5FA8E56D13EADD2D00B05884 /* CoreGraphics.framework in Frameworks */,
@@ -86,6 +106,14 @@
 		5FA8E55913EADD2D00B05884 = {
 			isa = PBXGroup;
 			children = (
+				5FA8E5B313EAF80000B05884 /* AudioToolbox.framework */,
+				5FA8E5AA13EAEEDC00B05884 /* QuizRunningViewController.h */,
+				5FA8E5AB13EAEEDC00B05884 /* QuizRunningViewController.m */,
+				5FA8E5AC13EAEEDC00B05884 /* QuizRunningViewController.xib */,
+				5FA8E5A713EAE15200B05884 /* QuizItem.h */,
+				5FA8E5A813EAE15200B05884 /* QuizItem.m */,
+				5FA8E5A413EADF9100B05884 /* Quiz.h */,
+				5FA8E5A513EADF9100B05884 /* Quiz.m */,
 				5FA8E56E13EADD2D00B05884 /* Quiz */,
 				5FA8E59013EADD2D00B05884 /* QuizTests */,
 				5FA8E56713EADD2D00B05884 /* Frameworks */,
@@ -130,10 +158,13 @@
 		5FA8E56F13EADD2D00B05884 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5FA8E5AF13EAF7CD00B05884 /* NotRight.aiff */,
+				5FA8E5B013EAF7CD00B05884 /* Right.aiff */,
 				5FA8E57013EADD2D00B05884 /* Quiz-Info.plist */,
 				5FA8E57113EADD2D00B05884 /* InfoPlist.strings */,
 				5FA8E57413EADD2D00B05884 /* main.m */,
 				5FA8E57613EADD2D00B05884 /* Quiz-Prefix.pch */,
+				5FA8E5A213EADED500B05884 /* quiz.txt */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -227,6 +258,10 @@
 				5FA8E57313EADD2D00B05884 /* InfoPlist.strings in Resources */,
 				5FA8E57C13EADD2D00B05884 /* MainWindow.xib in Resources */,
 				5FA8E58213EADD2D00B05884 /* QuizViewController.xib in Resources */,
+				5FA8E5A313EADED500B05884 /* quiz.txt in Resources */,
+				5FA8E5AE13EAEEDC00B05884 /* QuizRunningViewController.xib in Resources */,
+				5FA8E5B113EAF7CD00B05884 /* NotRight.aiff in Resources */,
+				5FA8E5B213EAF7CD00B05884 /* Right.aiff in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +300,9 @@
 				5FA8E57513EADD2D00B05884 /* main.m in Sources */,
 				5FA8E57913EADD2D00B05884 /* QuizAppDelegate.m in Sources */,
 				5FA8E57F13EADD2D00B05884 /* QuizViewController.m in Sources */,
+				5FA8E5A613EADF9100B05884 /* Quiz.m in Sources */,
+				5FA8E5A913EAE15200B05884 /* QuizItem.m in Sources */,
+				5FA8E5AD13EAEEDC00B05884 /* QuizRunningViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

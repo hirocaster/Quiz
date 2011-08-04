@@ -21,6 +21,9 @@
      
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
+    
+    srandomdev();
+    
     return YES;
 }
 

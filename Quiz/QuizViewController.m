@@ -7,8 +7,39 @@
 //
 
 #import "QuizViewController.h"
+#import "QuizRunningViewController.h"
+#import "Quiz.h"
 
 @implementation QuizViewController
+
+- (void)dealloc
+{
+    [_quiz release];
+    [super dealloc];
+}
+
+- (IBAction)startQuiz:(id)sender
+{
+    if (!_quiz) {
+        _quiz = [[Quiz alloc] init];
+        
+        NSBundle *bundle = [NSBundle mainBundle];
+        NSString *path;
+        
+        path = [bundle pathForResource:@"quiz" ofType:@"txt"];
+        [_quiz readFromFile:path];
+    }
+    
+    [_quiz clear];
+    
+    QuizRunningViewController *viewController;
+    viewController = [[QuizRunningViewController alloc] init];
+    
+    [viewController setQuiz:_quiz];
+    
+    [self presentModalViewController:viewController animated:YES];
+    [viewController release];
+}
 
 - (void)didReceiveMemoryWarning
 {

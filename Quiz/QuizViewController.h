@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+@class Quiz;
+
 @interface QuizViewController : UIViewController
+{
+    Quiz *_quiz;
+}
+
+- (IBAction)startQuiz:(id)sender;
 
 @end
